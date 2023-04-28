@@ -2,7 +2,7 @@ kind: "Deployment"
 apiVersion: "apps/v1"
 metadata:
   name: calculator
-  namespace: nlilaramani-dev
+  namespace: bsamal-dev
   labels:
     app: calc
 spec:
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: calculator
-          image: image-registry.openshift-image-registry.svc:5000/nlilaramani-dev/calc
+          image: image-registry.openshift-image-registry.svc:5000/bsamal-dev/calc
           ports:
             - containerPort: 8080
               protocol: "TCP"
